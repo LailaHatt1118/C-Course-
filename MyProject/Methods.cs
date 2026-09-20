@@ -5,12 +5,13 @@ namespace Monprojet
     {
         static void Main(string [] args)
         {
-              mathod = performs a section of code , whenever it's called "invoked" .
-                       benefit = Let's us reuse code writing it multiple times
-        string name = "Lily";
-        int age = 19 ;
-              sinHappyBirthday(name, age);
-              sinHappyBirthday(name, age);
+              // mathod = performs a section of code , whenever it's called "invoked" .
+              //          benefit = Let's us reuse code writing it multiple times
+            
+            string name = "Lily";
+            int age = 19 ;
+            sinHappyBirthday(name, age);
+            sinHappyBirthday(name, age);
         }
         static void sinHappyBirthday(string bname , int bage)  // i can give them same param like static main or not ,two methods it's work
         {
@@ -31,11 +32,9 @@ namespace Monprojet
               double result = Multiply (x , y);
               Console.WriteLine("The result is : " + result);
         }
-
         static double Multiply (double x, double y)
         {
               return  x * y ;
-
         }
 // ********************************************** method overloading *********************************************************************************************************
         static void Main(string [] args)
@@ -47,7 +46,6 @@ namespace Monprojet
         static double Multiply (double a, double b)
         {
               return  a * b ;
-              
         }
         static double Multiply (double a, double b, double c)
         {
@@ -80,5 +78,25 @@ namespace Monprojet
             Console.Write($"Your First Name is {firstName} and your Last Name is {lastName}");
             Console.Write($" and your age is {age , -10} years old");
       }
-    }
-}
+// ********************************************** ToString method *********************************************************************************************************
+      // ToString = converts an object to a string. used when you want a string representation of an object.
+        
+     static void Main (String [] args){
+           Car car1 = new Car("Toyota" , "red" , 2026);
+           Console.WriteLine(car1.ToString());
+     }
+     class Car {
+           public string model ;
+           public string color ;
+           public int year ;
+           public Car (string model , string color , int year){
+                 this.model = model ;
+                 this.color = color ;
+                 this.year = year ;
+           }
+           public override string ToString (){  //// override = overrides a virtual method in a derived class
+                 return "Car model is : " + model + " , color is : " + color + " , year is : " + year ;
+           }
+     }
+        
+}}
