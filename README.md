@@ -3,7 +3,7 @@ This repository contains my exercises and projects for learning the C# programmi
 
 # Contents
 
-MyFirstProgram/
+MyProject/
 
 Basics :   Variables.cs, Constants.cs, Output.cs, userInput.cs, mathClass.cs, stringMethods.cs
 Control flow: ifStatement.cs, switch.cs, ForLoops.cs, WhileLoops.cs
